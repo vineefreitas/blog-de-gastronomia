@@ -1,0 +1,251 @@
+*{
+    margin:0;
+}
+
+.container-fluid{
+    background: linear-gradient(to bottom, rgb(156, 119, 50) , rgb(255, 165, 0) );
+    height: 120px;
+    width: 1900px;
+}
+
+@media screen and (max-width:1020px){
+    .container-fluid{
+        height: 250px;
+    }
+}
+
+.navbar-brand{
+    font-size: 35px;
+    color:white;
+    position: relative;
+    left: 50px;
+}
+
+@media screen and (max-width:1020px){
+    .navbar-brand{
+        font-size: 40px;
+        left: auto;
+    }
+}
+
+.container2{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content:space-evenly;
+}
+
+@media screen and (max-width:600px){
+    .container2{
+        flex-direction: column;
+    }
+}
+
+.card-body{
+    background-color: #ffa500 ;
+}
+
+.card{
+    box-shadow: 5px 5px 5px 5px;
+    width: 300px;
+}
+
+@media screen and (max-width:1020px){
+    .card{
+        top:200px;
+        flex-direction: column;
+    }
+}
+
+
+.card-title {
+    background-color: #198754;
+    border: solid 2px #ffffff;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-style: normal; 
+    position: relative;
+}
+
+.card-text {
+    text-align: center;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+}
+
+.btn {
+    position: relative;
+}
+
+font {
+    color: #ffffff;
+}
+
+time {
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-size: small;
+    font-weight: 800;
+    font-style: normal;
+    position: absolute;
+    left: 104%;
+    bottom: 0%;
+    color: white;
+}
+
+footer {
+    background: linear-gradient(to top, rgb(54, 43, 23) 0%, rgb(156, 119, 50) 50%, rgb(255, 165, 0) 100%);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0 20px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+    
+footer a:hover {
+    color: #bbb;
+    text-decoration: underline;
+}
+footer h1 {
+    font-size: 20px;
+    padding: 10px;
+}
+footer p {
+    display: inline;
+}
+
+.barra{
+    height: 500px;
+    width:95%;
+    z-index: -1;
+    background: linear-gradient(to top, rgb(54, 43, 23) 0%, rgb(156, 119, 50) 50%, rgb(255, 165, 0) 100%);
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px;
+}
+
+@media screen and (max-width:1020px){
+    .barra{
+        top:700px
+    }
+}
+
+.introdução p{
+    position: relative;
+    top:0px;
+    left: 70px;
+    width: 900px;
+    text-decoration: underline;
+    font-size: larger;
+    color:white;
+}
+
+.introdução{
+    position: relative;
+    top: 50px;
+    
+}
+
+@media screen and (max-width:1020px){
+    .introdução {
+        position: relative;
+        width: 90%;
+        font-size:medium;
+        top:200px;
+        left: 40px;
+    }
+}
+
+body{
+    background-image: url(https://wallpaperaccess.com/full/767352.jpg);
+    background-size:2000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+}
+
+.barra2{
+    height: 300px;
+    width:50%;
+    z-index: -1;
+    background: linear-gradient(to top, rgb(236, 164, 29) 0%, rgb(201, 140, 27) 100%);
+    position: absolute;
+    top:0px;
+    left: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px;
+}
+
+@media screen and (max-width:1020px){
+    .barra2{
+        width: 95%;
+        height: 340px;
+        left: 20px;
+        
+    }
+}
+
+/* PARA CELULAR */
+@media screen and (max-width:500px){
+    .navbar-brand{
+        font-size: 30px;
+        width: 430px;
+    }
+
+    .container-fluid{
+        width: 430px;
+        margin-left: 0;
+    }
+
+    .barra2{
+        width: 350px;
+        left: -15px;
+    }
+
+    .introdução p{
+        left: -15px;
+        top:10px;
+        width: 350px;
+        font-size: medium;
+        text-align: center;
+    }
+
+    .barra{
+        height: 930px;
+        width: 350px;
+        left: 25px;
+    }
+
+    .card{
+        left: -15px;
+        top: 250px;
+        flex-direction: column;
+    
+    }
+
+    body{
+        height: auto;
+        width: auto;
+        background-image: url(https://png.pngtree.com/back_origin_pic/05/16/28/711d1513a19784c948bb7494f5244aae.jpg);
+        background-size: 1500px;
+        background-position: center;      
+    }
+
+    footer{
+        position: absolute;
+        bottom:-1000px;
+        width: 430px;   
+    }
+}
